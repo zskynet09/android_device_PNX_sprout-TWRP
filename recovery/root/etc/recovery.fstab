@@ -11,7 +11,7 @@
 /vendor          ext4              /dev/block/bootdevice/by-name/vendor     flags=slotselect;display="Vendor";backup=1;wipeingui
 /vendor_image    emmc              /dev/block/bootdevice/by-name/vendor     flags=slotselect
 /misc            emmc              /dev/block/bootdevice/by-name/misc
-/firmware        vfat              /dev/block/bootdevice/by-name/modem      flags=display="Firmware";slotselect;backup=1;mounttodecrypt;fsflags=context=u:object_r:firmware_file:s0
+/firmware        vfat              /dev/block/bootdevice/by-name/modem      flags=display="Firmware";slotselect;backup=0;mounttodecrypt;fsflags=context=u:object_r:firmware_file:s0
 
 # Removable storage
 /usb-otg         auto              /dev/block/sda1         /dev/block/sda   flags=removable;storage;display="USB OTG"
