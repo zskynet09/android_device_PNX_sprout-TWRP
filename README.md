@@ -1,4 +1,4 @@
-Nokia X7/8.1 (codenamed _"PNX_sprout"_) are smartphones from Nokia, was announced and released in Q4 2018.
+Nokia 8.1 (codenamed _"PNX_sprout"_) are smartphones from Nokia, was announced and released in Q4 2018.
 
 ## Device specifications
 
