@@ -5,7 +5,7 @@ Nokia 8.1 (codenamed _"PNX_sprout"_) are smartphones from Nokia, was announced a
 | Device       |   Nokia 8.1                                     |
 | -----------: | :---------------------------------------------- |
 | SoC          | Qualcomm SDM710 Snapdragon 710                  |
-| CPU          | 8x Qualcomm® Kryo™ 260 up to 2.2GHz             |
+| CPU          | 8x Qualcomm® Kryo™ 360 up to 2.2GHz             |
 | GPU          | Adreno 616                                      |
 | Memory       | 4/6 GB                                          |
 | Shipped Android version | 9.0.0 (Global)                       |
