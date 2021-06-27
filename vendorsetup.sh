@@ -1,2 +1,2 @@
-add_lunch_combo omni_PNX_sprout-eng
-
+export ALLOW_MISSING_DEPENDENCIES=true
+export LC_ALL=C
