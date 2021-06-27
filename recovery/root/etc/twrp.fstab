@@ -1,34 +1,34 @@
 # mount point       fstype    device                                                                flags
-/system             ext4      /dev/block/bootdevice/by-name/system                                  flags=slotselect;backup=1;display="System";
-/system_image       emmc      /dev/block/bootdevice/by-name/system                                  flags=slotselect
+/system             ext4      /dev/block/bootdevice/by-name/system                                  flags=slotselect;backup=1;display="System";wipeingui
+/system_image       emmc      /dev/block/bootdevice/by-name/system                                  flags=slotselect;
 /vendor             ext4      /dev/block/bootdevice/by-name/vendor                                  flags=slotselect;display="Vendor";backup=1;wipeingui
-/vendor_image       emmc      /dev/block/bootdevice/by-name/vendor                                  flags=slotselect
+/vendor_image       emmc      /dev/block/bootdevice/by-name/vendor                                  flags=slotselect;
 /data               ext4      /dev/block/bootdevice/by-name/userdata                                flags=encryptable=footer;backup=1;display="Data";
-/sdcard1           auto       /dev/block/mmcblk1p1                     				flags=display="MicroSD";storage;wipeingui;removable
-/boot               emmc      /dev/block/bootdevice/by-name/boot                                    flags=display="Boot";backup=1;flashimg=1;
-/misc               emmc      /dev/block/bootdevice/by-name/misc                                    flags=display="Misc";backup=1;flashimg=1;
-/xbl                emmc      /dev/block/bootdevice/by-name/xbl                                     flags=display="Xbl";
-/xbl_config         emmc      /dev/block/bootdevice/by-name/xbl_config                              flags=display="Xbl_config";
-/tz                 emmc      /dev/block/bootdevice/by-name/tz                                      flags=display="Tz";
-/aop                emmc      /dev/block/bootdevice/by-name/aop                                     flags=display="Aop";
-/hyp                emmc      /dev/block/bootdevice/by-name/hyp                                     flags=display="Hyp";
-/keymaster          emmc      /dev/block/bootdevice/by-name/keymaster                               flags=display="Keymaster";
-/cmnlib             emmc      /dev/block/bootdevice/by-name/cmnlib                                  flags=display="Cmnlib";
-/cmnlib64           emmc      /dev/block/bootdevice/by-name/cmnlib64                                flags=display="Cmnlib64";
-/firmware           emmc      /dev/block/bootdevice/by-name/modem      				flags=slotselect;display="Firmware";
-/bt_firmware        vfat      /dev/block/bootdevice/by-name/bluetooth				flags=slotselect;display="Bluetooth";
-/dsp                emmc      /dev/block/bootdevice/by-name/dsp                                     flags=display="Dsp";
-/abl                emmc      /dev/block/bootdevice/by-name/abl                                     flags=display="Abl";
-/dtbo               emmc      /dev/block/bootdevice/by-name/dtbo                                    flags=display="Dtbo";backup=1;flashimg=1;
-/persist            ext4      /dev/block/bootdevice/by-name/persist                                 flags=display="Persist";
+/sdcard1            auto      /dev/block/mmcblk1p1                     				                      flags=display="MicroSD";storage;wipeingui;removable
+/boot               emmc      /dev/block/bootdevice/by-name/boot                                    flags=display="Boot";slotselect;backup=1;flashimg=1;
+/misc               emmc      /dev/block/bootdevice/by-name/misc
+/xbl                emmc      /dev/block/bootdevice/by-name/xbl					                            flags=slotselect
+/xbl_config         emmc      /dev/block/bootdevice/by-name/xbl_config				                      flags=slotselect
+/tz                 emmc      /dev/block/bootdevice/by-name/tz					                            flags=slotselect
+/aop                emmc      /dev/block/bootdevice/by-name/aop					                            flags=slotselect
+/hyp                emmc      /dev/block/bootdevice/by-name/hyp					                            flags=slotselect
+/keymaster          emmc      /dev/block/bootdevice/by-name/keymaster                               flags=slotselect
+/cmnlib             emmc      /dev/block/bootdevice/by-name/cmnlib					                        flags=slotselect
+/cmnlib64           emmc      /dev/block/bootdevice/by-name/cmnlib64					                      flags=slotselect
+/firmware           emmc      /dev/block/bootdevice/by-name/modem					                          flags=slotselect
+/bt_firmware        vfat      /dev/block/bootdevice/by-name/bluetooth				                        flags=slotselect
+/dsp                emmc      /dev/block/bootdevice/by-name/dsp					                            flags=slotselect
+/abl                emmc      /dev/block/bootdevice/by-name/abl					                            flags=slotselect
+/dtbo               emmc      /dev/block/bootdevice/by-name/dtbo                                    flags=display="Dtbo";slotselect;backup=1;flashimg=1;
+/persist            ext4      /dev/block/bootdevice/by-name/persist
 /persist_image      emmc      /dev/block/bootdevice/by-name/persist                                 flags=display="Persist image";backup=1;flashimg=1;
-/devcfg             emmc      /dev/block/bootdevice/by-name/devcfg                                  flags=display="Devcfg";
-/qupfw              emmc      /dev/block/bootdevice/by-name/qupfw                                   flags=display="Qupfw";
-/storsec            emmc      /dev/block/bootdevice/by-name/storsec                                 flags=display="Storsec";
-/vbmeta             emmc      /dev/block/bootdevice/by-name/vbmeta                                  flags=display="Vbmeta";
-/splash             emmc      /dev/block/bootdevice/by-name/splash                                  flags=display="Splash";
-/zplash             emmc      /dev/block/bootdevice/by-name/zplash                                  flags=display="Zplash";
-/nvdef              emmc      /dev/block/bootdevice/by-name/nvdef                                   flags=display="Nvdef";
-/sutinfo            emmc      /dev/block/bootdevice/by-name/sutinfo                                 flags=display="Sutinfo";
-/logfs              vfat      /dev/block/bootdevice/by-name/logfs                                   flags=display="Logfs";
-/systeminfo         emmc      /dev/block/bootdevice/by-name/systeminfo 				flags=slotselect;display="systeminfo"
+/devcfg             emmc      /dev/block/bootdevice/by-name/devcfg					                        flags=slotselect
+/qupfw              emmc      /dev/block/bootdevice/by-name/qupfw					                          flags=slotselect
+/storsec            emmc      /dev/block/bootdevice/by-name/storsec					                        flags=slotselect
+/vbmeta             emmc      /dev/block/bootdevice/by-name/vbmeta					                        flags=slotselect
+/splash             emmc      /dev/block/bootdevice/by-name/splash					                        flags=display="Splash";slotselect;backup=1;flashimg=1;
+/zplash             emmc      /dev/block/bootdevice/by-name/zplash					                        flags=display="Zplash";slotselect;backup=1;flashimg=1;
+/nvdef              emmc      /dev/block/bootdevice/by-name/nvdef					                          flags=slotselect
+/sutinfo            emmc      /dev/block/bootdevice/by-name/sutinfo
+/logfs              vfat      /dev/block/bootdevice/by-name/logfs
+/systeminfo         emmc      /dev/block/bootdevice/by-name/systeminfo				                      flags=slotselect
