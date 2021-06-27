@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-ALLOW_MISSING_DEPENDENCIES=true
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -65,9 +63,13 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 PRODUCT_PACKAGES += \
     tzdata_twrp \
 
+# Properties for decryption
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.build.security_patch=2099-12-31
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := omni_PNX_sprout
 PRODUCT_DEVICE := PNX_sprout
 PRODUCT_BRAND := Nokia
 PRODUCT_MODEL := Nokia 8.1
-PRODUCT_MANUFACTURER := Nokia
+PRODUCT_MANUFACTURER := FIH
