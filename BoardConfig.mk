@@ -60,9 +60,6 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 # Assert
 TARGET_OTA_ASSERT_DEVICE := PNX_sprout
 
-# AVB
-BOARD_AVB_ENABLE := true
-
 # Crypto
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
