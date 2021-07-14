@@ -42,6 +42,7 @@ on init
     symlink /vendor/manifest.xml /system/manifest.xml
 
     start hwservicemanager
+    start servicemanager
     setprop crypto.ready 1
     start boot-1-0
 
